@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- GSAP CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  </head>
+  <body class="bg-[#111]">
+    <header class="bg-[#0f0f0f] text-white px-6 py-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <!-- Left: Logo -->
+        <div class="flex items-center space-x-2">
+          <div class="w-4 h-4 bg-orange-600 rounded-full"></div>
+          <span class="font-semibold">Creator Hub</span>
+        </div>
+
+        <!-- Center: Navigation -->
+        <nav class="hidden md:flex items-center space-x-6 text-sm text-gray-400">
+          <a href="#" class="text-orange-500 hover:text-white">What’s New</a>
+          <a href="#" class="hover:text-white">Go Pro</a>
+          <a href="#" class="hover:text-white">Resources</a>
+        </nav>
+
+        <!-- Right: Actions -->
+        <div class="flex items-center space-x-3">
+          <button class="bg-orange-600 hover:bg-orange-500 text-white px-4 py-2 rounded-md text-sm font-semibold cursor-pointer">Start Your Journey</button>
+          <button class="border border-gray-600 px-4 py-2 rounded-md text-sm hover:bg-white hover:text-black transition cursor-pointer">Sign In</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="text-white font-sans flex items-center justify-center min-h-[80vh] px-4">
+      <div class="text-center relative">
+        <div class="relative z-10">
+          <div class="inline-flex items-center gap-2 px-4 py-1 bg-[#1c1c1c] text-xs uppercase tracking-widest text-white rounded-full mb-4">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2L2 18h16L10 2z" /></svg>
+            Membership Template
+          </div>
+
+          <h1 class="text-4xl md:text-5xl font-semibold">Elevate your skills with <span class="text-orange-500">elite design pros</span></h1>
+
+          <p class="text-lg text-gray-400 mt-4 max-w-xl mx-auto">Modern vibes, effortless reading—perfect for creators.</p>
+
+          <button class="mt-6 bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full text-sm font-semibold transition cursor-pointer">Start Your Journey</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="px-6 py-12 max-w-4xl mx-auto text-white">
+      <!-- Navigation Tabs -->
+      <nav class="flex gap-6 text-sm font-medium mb-8">
+        <a href="#" class="text-gray-400 hover:text-white hover:bg-stone-900 px-3 py-1 rounded-full cursor-pointer">All</a>
+        <a href="#" class="bg-[#711515] text-white px-3 py-1 rounded-full cursor-pointer">Free</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:bg-stone-900 px-3 py-1 rounded-full cursor-pointer">Figma</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:bg-stone-900 px-3 py-1 rounded-full cursor-pointer">Framer</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:bg-stone-900 px-3 py-1 rounded-full cursor-pointer">Resources</a>
+        <a href="#" class="text-gray-400 hover:text-white hover:bg-stone-900 px-3 py-1 rounded-full cursor-pointer">Design</a>
+      </nav>
+
+      <!-- Section Title -->
+      <h2 class="text-xl font-semibold mb-6">Free</h2>
+
+      <!-- Search Bar -->
+      <div class="mb-10">
+        <div class="relative">
+          <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 21l-4.35-4.35M16.65 16.65A7.5 7.5 0 1 0 3 10a7.5 7.5 0 0 0 13.65 6.65z" />
+            </svg>
+          </span>
+          <input
+            type="text"
+            placeholder="Search design content..."
+            class="w-full bg-[#1a1a1a] text-white rounded-md pl-10 pr-4 py-3 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-stone-800"
+          />
+        </div>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <!-- Article 1 -->
+        <div class="article-card transform transition-transform duration-300 origin-center">
+          <img src="/assets/doc2.png" alt="Skull Design" class="rounded-md w-full h-[244px] cursor-pointer" />
+          <h3 class="text-xl font-semibold mt-4 leading-tight cursor-pointer">Start Building with Next.js Today</h3>
+          <p class="text-gray-400 mt-2 text-sm">Next.js follows smart conventions, so your project stays tidy from the start.</p>
+          <div class="text-xs text-gray-500 mt-2 flex items-center gap-2"><span>Design</span> • <span>5 min read</span> • <span>Apr 6, 2025</span></div>
+          <div class="mt-3 flex items-center gap-2">
+            <img src="/assets/av1.png" class="rounded-full w-6" />
+            <span class="text-sm font-medium">John Deo</span>
+          </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div  class="article-card transform transition-transform duration-300 origin-center">
+          <img src="/assets/doc3.png" alt="Inclusive Design" class="rounded-md w-full h-[244px] cursor-pointer" />
+          <h3 class="text-xl font-semibold mt-4 leading-tight cursor-pointer">Design for Everyone: 10 Inclusive Practices</h3>
+          <p class="text-gray-400 mt-2 text-sm">Making Digital Products Work for Everyone—Accessible, Usable, Intuitive.</p>
+          <div class="text-xs text-gray-500 mt-2 flex items-center gap-2"><span>Resources</span> • <span>11 min read</span> • <span>Apr 11, 2025</span></div>
+          <div class="mt-3 flex items-center gap-2">
+            <img src="/assets/av2.png" class="rounded-full w-6" />
+            <span class="text-sm font-medium">Christina April</span>
+          </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div  class="article-card transform transition-transform duration-300 origin-center">
+          <img src="/assets/doc4.png" alt="Skull Design" class="rounded-md w-full h-[244px] cursor-pointer" />
+          <h3 class="text-xl font-semibold mt-4 leading-tight cursor-pointer">Start Building with Next.js Today</h3>
+          <p class="text-gray-400 mt-2 text-sm">Next.js follows smart conventions, so your project stays tidy from the start.</p>
+          <div class="text-xs text-gray-500 mt-2 flex items-center gap-2"><span>Design</span> • <span>5 min read</span> • <span>Apr 6, 2025</span></div>
+          <div class="mt-3 flex items-center gap-2">
+            <img src="/assets/av2.png" class="rounded-full w-6" />
+            <span class="text-sm font-medium">Christina April</span>
+          </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div  class="article-card transform transition-transform duration-300 origin-center">
+          <img src="/assets/doc5.png" alt="Inclusive Design" class="rounded-md w-full h-[244px] cursor-pointer" />
+          <h3 class="text-xl font-semibold mt-4 leading-tight cursor-pointer">Design for Everyone: 10 Inclusive Practices</h3>
+          <p class="text-gray-400 mt-2 text-sm">Making Digital Products Work for Everyone—Accessible, Usable, Intuitive.</p>
+          <div class="text-xs text-gray-500 mt-2 flex items-center gap-2"><span>Resources</span> • <span>11 min read</span> • <span>Apr 11, 2025</span></div>
+          <div class="mt-3 flex items-center gap-2">
+            <img src="/assets/av1.png" class="rounded-full w-6" />
+            <span class="text-sm font-medium">John Smith</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#0f0f0f] text-white py-16 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
+
+        <p class="text-gray-400 max-w-2xl mx-auto mb-12">We provide high-quality design education, tools, and resources to help you build better products.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Card -->
+          <div class="service-card1 bg-[#1a1a1a] rounded-2xl p-6 hover:shadow-xl transition">
+            <!-- Font Awesome Icon -->
+            <div class="text-3xl text-[#38bdf8] mb-4">
+              <i class="fas fa-layer-group"></i>
+              <!-- You can change this icon -->
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Design Education</h3>
+            <p class="text-gray-400 text-sm">Learn from top-notch design professionals with practical, project-based learning.</p>
+          </div>
+
+          <div class="service-card2 bg-[#1a1a1a] rounded-2xl p-6 hover:shadow-xl transition">
+            <!-- Font Awesome Icon -->
+            <div class="text-3xl text-[#38bdf8] mb-4">
+              <i class="fas fa-barcode"></i>
+              <!-- You can change this icon -->
+            </div>
+            <h3 class="text-xl font-semibold mb-2">UI Resources</h3>
+            <p class="text-gray-400 text-sm">Access Figma kits, icon packs, templates, and ready-to-use UI components.</p>
+          </div>
+
+          <div class="service-card3 bg-[#1a1a1a] rounded-2xl p-6 hover:shadow-xl transition">
+            <!-- Font Awesome Icon -->
+            <div class="text-3xl text-[#38bdf8] mb-4">
+              <i class="fas fa-users"></i>
+              <!-- You can change this icon -->
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Community Access</h3>
+            <p class="text-gray-400 text-sm">Join a growing community of creators, share your work, and get feedback instantly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#0f0f0f] text-white py-20 px-6">
+      <div class="max-w-6xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">What People Are Saying</h2>
+        <p class="text-gray-400 mb-12">Hear from our community of designers, developers, and creators.</p>
+
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Testimonial Card -->
+          <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+            <p class="text-gray-300 text-sm mb-4">“This platform changed how I approach design. The quality of resources is unmatched.”</p>
+            <div class="flex items-center gap-4 mt-4">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://i.pravatar.cc/100?img=1" alt="Avatar" />
+              <div class="text-left">
+                <p class="text-white font-semibold text-sm">Alex Johnson</p>
+                <p class="text-gray-500 text-xs">Product Designer, Nova</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+            <p class="text-gray-300 text-sm mb-4">“I found exactly what I needed to level up my Figma skills and land better freelance gigs.”</p>
+            <div class="flex items-center gap-4 mt-4">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://i.pravatar.cc/100?img=2" alt="Avatar" />
+              <div class="text-left">
+                <p class="text-white font-semibold text-sm">Maria Gomez</p>
+                <p class="text-gray-500 text-xs">Freelance UI/UX Designer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-md hover:shadow-lg transition">
+            <p class="text-gray-300 text-sm mb-4">“Amazing value for the price. The content is thoughtful, relevant, and actionable.”</p>
+            <div class="flex items-center gap-4 mt-4">
+              <img class="w-10 h-10 rounded-full object-cover" src="https://i.pravatar.cc/100?img=3" alt="Avatar" />
+              <div class="text-left">
+                <p class="text-white font-semibold text-sm">Daniel Lee</p>
+                <p class="text-gray-500 text-xs">Founder, Pixel Studio</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#0f0f0f] text-white px-6 py-12 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+        <!-- Left: Branding and Follow -->
+        <div>
+          <div class="flex items-center gap-2 mb-2">
+            <div class="w-4 h-4 bg-orange-600 rounded-full"></div>
+            <span class="font-semibold">Creator Hub</span>
+          </div>
+          <p class="text-sm text-gray-400 mb-4">Learn from top-notch design educators</p>
+          <button class="border border-gray-600 px-4 py-1 rounded-md text-white hover:bg-white hover:text-black transition cursor-pointer">Follow</button>
+        </div>
+
+        <!-- Middle: Links -->
+        <div class="grid grid-cols-2 gap-8">
+          <div>
+            <h4 class="font-semibold mb-2">Creator Hub</h4>
+            <ul class="space-y-1 text-sm text-gray-400">
+              <li><a href="#" class="hover:text-white text-orange-500">Explore</a></li>
+              <li><a href="#" class="hover:text-white">Contact Us</a></li>
+            </ul>
+            <p class="text-xs text-gray-500 mt-4">Created by <span class="text-orange-500">ME</span></p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Account</h4>
+            <ul class="space-y-1 text-sm text-gray-400">
+              <li><a href="#" class="hover:text-white">Sign In</a></li>
+              <li><a href="#" class="hover:text-white">Reset Password</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Right: Mailing List -->
+        <div>
+          <div class="bg-[#1a1a1a] border border-gray-700 p-6 rounded-md">
+            <h4 class="font-semibold mb-2">Join our mailing list</h4>
+            <p class="text-sm text-gray-400 mb-4">Get notified about new posts as soon as they are posted</p>
+            <div class="flex">
+              <input type="email" placeholder="Email Address" class="flex-grow px-4 py-2 bg-black border border-gray-600 rounded-l-md focus:outline-none text-white" />
+              <button class="bg-orange-600 hover:bg-orange-500 text-white px-4 py-2 rounded-r-md cursor-pointer">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Row -->
+      <div class="mt-10 text-sm text-gray-500 text-center">
+        <p>© Copyright 2025 Creator Hub</p>
+      </div>
+    </footer>
+      
+  </body>
+
+  <!-- At the bottom of your <body> -->
+    <script>
+        // Register ScrollTrigger plugin
+        gsap.registerPlugin(ScrollTrigger);
+      
+        // Animate each article card when it enters the viewport
+        document.querySelectorAll('.article-card').forEach((card, index) => {
+          gsap.fromTo(card,
+            { 
+              scale: 0.8,
+              opacity: 0,
+              x: -50 // Slide from left
+            },
+            {
+              scale: 1,
+              opacity: 1,
+              x: 0,
+              duration: 0.5,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: card,
+                start: "top 85%",
+                toggleActions: "play none none none",
+              }
+            }
+          );
+        });
+        document.querySelectorAll('.service-card1').forEach((card, index) => {
+          gsap.fromTo(card,
+            { 
+              scale: 0.8,
+              opacity: 0,
+              x: -50 // Slide from left
+            },
+            {
+              scale: 1,
+              opacity: 1,
+              x: 0,
+              stagger: 0.2,
+              duration: 0.5,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: card,
+                start: "top 85%",
+                toggleActions: "play none none none",
+              }
+            }
+          );
+        });
+        document.querySelectorAll('.service-card2').forEach((card, index) => {
+          gsap.fromTo(card,
+            { 
+              scale: 0.8,
+              opacity: 0,
+              x: 0 // Slide from left
+            },
+            {
+              scale: 1,
+              opacity: 1,
+              x: 0,
+              stagger: 0.2,
+              duration: 0.5,
+              ease: "power2.out",
+              scrollTrigger: {
+                trigger: card,
+                start: "top 85%",
+                toggleActions: "play none none none",
+              }
+            }
+          );
+        });
+      </script>
+      
+  
+</html>
